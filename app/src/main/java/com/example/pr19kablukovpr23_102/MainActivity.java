@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setInitialDateTime();
     }
 
+    // Метод для установки начальных даты и времени в текстовое поле
     private void setInitialDateTime() {
         timePick.setText(DateUtils.formatDateTime(this,
                 dateAndTime.getTimeInMillis(),
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    // установка обработчика выбора времени
+    // Обработчик выбора времени, обновляет объект Calendar и экран
     TimePickerDialog.OnTimeSetListener t = new TimePickerDialog.OnTimeSetListener() {
         public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
             dateAndTime.set(Calendar.HOUR_OF_DAY, hourOfDay);
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     };
 
-    // установка обработчика выбора даты
+    // Обработчик выбора даты, обновляет объект Calendar и экран
     DatePickerDialog.OnDateSetListener d = new DatePickerDialog.OnDateSetListener() {
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
             dateAndTime.set(Calendar.YEAR, year);
