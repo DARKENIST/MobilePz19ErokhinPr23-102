@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pr19kablukovpr23_102"
+    namespace = "com.example.mobilepz19erokhinpr23_102"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.pr19kablukovpr23_102"
+        applicationId = "com.example.mobilepz19erokhinpr23_102"
         minSdk = 29
         targetSdk = 36
         versionCode = 1
